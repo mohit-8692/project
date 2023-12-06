@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { RiCloseLine, RiMenu3Line } from "react-icons/ri";
+import { Link } from "react-router-dom";
 import logo from "../../assets/new-logo.svg";
 import "./navbar.css";
-import Signin from "../Signin";
-import { BrowserRouter, Link } from "react-router-dom";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const onClick = () => {

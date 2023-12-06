@@ -1,19 +1,10 @@
 import React from "react";
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import { CTA, Navbar } from "./components";
-import {
-  Blog,
-  
-  Features,
-  Footer,
-  Header,
-  Possibility,
-  WhatGPT3,
-} from "./containers";
+import { Navbar } from "./components";
 import Signin from "./components/Signin";
-import Home from "./components/navbar/home/Home";
 import Signup from "./components/Signup";
+import Home from "./components/navbar/home/Home";
 const App = () => {
   return (
     <BrowserRouter>

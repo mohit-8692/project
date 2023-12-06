@@ -63,7 +63,7 @@
     margin-left: 1rem;
 
     display: none;
-    position: relative;
+    position: fixed;
 }
 
 .gpt3__navbar-menu svg {
@@ -79,7 +79,7 @@
     text-align: end;
     background: var(--color-footer);
     padding: 2rem;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 40px;
     margin-top: 1rem;
