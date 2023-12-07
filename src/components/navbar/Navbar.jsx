@@ -93,15 +93,35 @@
 
 import React, { useState } from "react";
 import { RiCloseLine, RiMenu3Line } from "react-icons/ri";
+
+import { useNavigate } from "react-router-dom";
+import logo from "../../assets/new-logo.svg";
+
 import { Link } from "react-router-dom";
 // import logo from "../../assets/working.png";
+
 import "./navbar.css";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+
+  let navigate = useNavigate();
+  const onClick = () => {
+    console.log("onclicked");
+    // <Signin />;
+  };
+  const handleLogout = (e)=>
+  {
+    localStorage.removeItem('token');
+    console.log("pressed on logout");
+    window.location.reload(true)
+    navigate('/')
+  }
+
   // const onClick = () => {
   //   console.log("onclicked");
   //   // <Signin />;
   // };
+
   return (
     
       <div className="gpt3__navbar">
@@ -125,11 +145,24 @@ const Navbar = () => {
               </p>
             </div>
           </div>
+
+        
+    
+          <div className="gpt3__navbar-sign">
+              {console.log(localStorage.getItem('token'))}
+              {
+              (!localStorage.getItem('token')) ? <Link to='/Login' className="btn btn-primary">
+                Sign in
+              </Link> : <Link to ='/' className="btn btn-primary" onSubmit={handleLogout}>Logout</Link>
+              }
+            
+
       
           <div className="gpt3__navbar-sign " >
               <Link to='/Login' className="btn btn-primary">
                 Sign in
               </Link>
+
           </div>
     
         <div className="gpt3__navbar-menu">
@@ -176,4 +209,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
 
