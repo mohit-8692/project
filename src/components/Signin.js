@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import sampleImage from "../assets/logo (1).png";
 const Signin = () => {
+  // New Update as git branch
   return (
     <div>
       <div className="login-image">
