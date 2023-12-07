@@ -1,11 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import sampleImage from "../assets/logo6.png";
+import sampleImage from "../assets/logo (1).png";
 const Signin = () => {
   return (
     <div>
-      <div className="login-image"></div>
-      <img src={sampleImage} alt="" className="w-64 h-64"/>
+      <div className="login-image">
+
+      <img src={sampleImage} alt="image" className="cuh-logo mx-5" style={{height:'450px ',border: 'none ',outline: 'none',margin:'0px',padding:'0',}}/> 
+      
+      </div>
       <div>
         <section className="absolute top-20 right-0 ">
           <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
