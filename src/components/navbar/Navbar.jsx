@@ -73,9 +73,9 @@ const Navbar = () => {
                 </p>
               </div>
               <div className="gpt3__navbar-menu_container-links-sign m">
-                <Link to="/Login">
+                {/* <Link to="/Login">
                 <button type="button">Sign up</button>
-                </Link>
+                </Link> */}
               </div>
             </div>
           )}

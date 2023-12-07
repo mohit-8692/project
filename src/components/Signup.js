@@ -11,12 +11,12 @@ const Signup = () => {
     }
   return (
     <div>
-      <div className="login-image"></div>
+      {/* <div className="login-image"></div>
       <img
         src="E:\react\project\images\sampleImage2.jpeg"
         alt=""
         className="w-64 h-64"
-      />
+      /> */}
       {/* <h1 classNameName="text-white top-20 right-0 ">Creating a new user</h1> */}
       <div>
         <section className="absolute top-40 right-20 left-20 ">

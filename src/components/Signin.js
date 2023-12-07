@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import sampleImage from "../assets/logo6.png";
 const Signin = () => {
   return (
     <div>
       <div className="login-image"></div>
-      <img src="E:\react\project\images\sampleImage2.jpeg" alt="" className="w-64 h-64"/>
-      {/* import {sampleImage2} from "E:\react\project\images\"; */}
-      
+      <img src={sampleImage} alt="" className="w-64 h-64"/>
       <div>
         <section className="absolute top-20 right-0 ">
           <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
@@ -15,10 +14,10 @@ const Signin = () => {
                 <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-black">
                   Sign in to your account
                 </h1>
-                <form className="space-y-4 md:space-y-6" action="#">
+                <htmlForm className="space-y-4 md:space-y-6" action="#">
                   <div>
                     <label
-                      for="email"
+                      htmlFor="email"
                       className="block mb-2 text-sm font-medium text-gray-900 dark:text-black"
                     >
                       Your email
@@ -34,7 +33,7 @@ const Signin = () => {
                   </div>
                   <div>
                     <label
-                      for="password"
+                      htmlFor="password"
                       className="block mb-2 text-sm font-medium text-gray-900 dark:text-black"
                     >
                       Password
@@ -61,7 +60,7 @@ const Signin = () => {
                       </div>
                       <div className="ml-3 text-sm">
                         <label
-                          htmlhtmlFor="remember"
+                          htmlFor="remember"
                           className="text-gray-500 dark:text-blue-grey"
                         >
                           Remember me
@@ -72,7 +71,7 @@ const Signin = () => {
                       href="#"
                       className="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500"
                     >
-                      Forgot password?
+                      htmlForgot password?
                     </a>
                   </div>
                   <button
@@ -90,7 +89,7 @@ const Signin = () => {
                       Sign up
                     </Link>
                   </p>
-                </form>
+                </htmlForm>
               </div>
             </div>
           </div>
