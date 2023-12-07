@@ -1,8 +1,7 @@
 import React from 'react';
 import ai from '../../assets/ai.png';
-import people from '../../assets/people.png';
+//import people from '../../assets/people.png';
 import './header.css';
-
 const Header = () => (
   <div className="gpt3__header section__padding" id="home">
     <div className="gpt3__header-content">
@@ -11,14 +10,14 @@ const Header = () => (
         Participate in contents and enhance your skills.
       </p>
 
-      <div className="gpt3__header-content__input">
+      {/* <div className="gpt3__header-content__input">
         <input type="email" placeholder="Your Email Address" />
         <button type="button">Get Started</button>
-      </div>
+      </div> */}
 
       <div className="gpt3__header-content__people">
-        <img src={people} alt="people"/>
-        <p>People connected with us </p>
+        {/* <img src={people} alt="people"/> */}
+        {/* <p>People connected with us </p> */}
       </div>
     </div>
 
